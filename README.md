@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:022C22,50:16A34A,100:4ADE80&height=260&section=header&text=xomnibot&fontSize=84&fontColor=ECFDF5&stroke=22C55E&strokeWidth=1&animation=twinkling&desc=open%20source%20%C2%B7%20offensive%20security%20%C2%B7%20vulnerability%20research&descSize=18&descAlignY=72&descColor=BBF7D0" width="100%" alt="xomnibot — open source · offensive security · vulnerability research" />
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:022C22,50:16A34A,100:4ADE80&height=260&section=header&text=xomnibot&fontSize=84&fontColor=ECFDF5&stroke=22C55E&strokeWidth=1&animation=twinkling&desc=open%20source%20%C2%B7%20offensive%20security%20%C2%B7%20machine%20learning&descSize=18&descAlignY=72&descColor=BBF7D0" width="100%" alt="xomnibot — open source · offensive security · machine learning" />
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2600&pause=1100&color=22C55E&center=true&vCenter=true&width=760&height=46&lines=%24+git+commit+-m+%22contributing+to+open+source%22;%24+hunting+bugs%2C+shipping+fixes;%24+ethical+hacking+%26+vulnerability+research;%24+understand+systems.+build+better+defenses." alt="Contributing to open source, hunting bugs, shipping fixes" />
 
@@ -10,6 +10,11 @@
 <a href="https://youtube.com/@xomnibot"><img src="https://img.shields.io/badge/YouTube-052E16?style=for-the-badge&logo=youtube&logoColor=4ADE80" alt="YouTube" /></a>
 <a href="https://linkedin.com/in/xomnibot"><img src="https://img.shields.io/badge/LinkedIn-052E16?style=for-the-badge&logo=linkedin&logoColor=4ADE80" alt="LinkedIn" /></a>
 <a href="https://x.com/xomnibot"><img src="https://img.shields.io/badge/X-052E16?style=for-the-badge&logo=x&logoColor=4ADE80" alt="X" /></a>
+<a href="https://instagram.com/xomnibot"><img src="https://img.shields.io/badge/Instagram-052E16?style=for-the-badge&logo=instagram&logoColor=4ADE80" alt="Instagram" /></a>
+
+<br><br>
+
+<img src="assets/matrix.gif" width="100%" alt="Matrix-style falling green code" />
 
 </div>
 
@@ -42,8 +47,14 @@ xomnibot@github:~$ cat mission.txt
 identify → exploit → disclose → defend
 
 xomnibot@github:~$ ls ./now
-building-offensive-tooling/    reversing-malware/    ctf/    teaching-on-youtube/
+building-offensive-tooling/    reversing-malware/    training-models/    ctf/    teaching-on-youtube/
 ```
+
+<div align="center">
+
+<img src="assets/terminal.svg" width="100%" alt="Animated terminal running lab recon, model training and reversing commands" />
+
+</div>
 
 <br>
 
@@ -55,11 +66,40 @@ building-offensive-tooling/    reversing-malware/    ctf/    teaching-on-youtube
 
 <br>
 
-<img src="assets/h-toolkit.svg" width="100%" alt="04 // Toolkit" />
+<div align="center">
+
+<img src="assets/ml-net.svg" width="100%" alt="Animated neural network with pulses moving between layers" />
+
+</div>
+
+**On the roadmap**
+
+<sub>Planned work: nothing below has shipped yet, and badges change as each project starts. Security tools are for authorized testing and isolated labs only.</sub>
+
+| Project | What it does | Stack | Status |
+| :-- | :-- | :-- | :-: |
+| **authz-diff** | Goal: replays captured API requests under two test accounts and flags likely BOLA/IDOR issues by diffing the responses. Requires a scope file; intended for OWASP crAPI labs and authorized engagements only. | Python, httpx, OpenAPI, Burp XML export | <img src="https://img.shields.io/badge/status-roadmap-22C55E?style=flat-square&labelColor=052E16" alt="Status: roadmap" /> |
+| **purple-ad-lab** | Goal: spins up a disposable Active Directory lab, runs Atomic Red Team techniques against it, and tests whether Sigma rules catch them. Runs only on isolated VMs I own. | Ansible, Vagrant, Sysmon, Elastic, Sigma, Atomic Red Team | <img src="https://img.shields.io/badge/status-roadmap-22C55E?style=flat-square&labelColor=052E16" alt="Status: roadmap" /> |
+| **ghidra-triage** | Goal: batch-analyzes binaries with headless Ghidra, summarizes imports, strings, and suspicious API clusters, and drafts YARA rules for human review. Samples stay in an offline analysis VM. | Ghidra headless, PyGhidra, yara-python | <img src="https://img.shields.io/badge/status-roadmap-22C55E?style=flat-square&labelColor=052E16" alt="Status: roadmap" /> |
+| **phish-url-clf** | Goal: classifies phishing URLs from lexical features, comparing a scikit-learn baseline with a character-level CNN. Uses a time-based split to limit leakage and evaluates at low false-positive rates. | Python, scikit-learn, PyTorch, PhishTank, Tranco | <img src="https://img.shields.io/badge/status-roadmap-22C55E?style=flat-square&labelColor=052E16" alt="Status: roadmap" /> |
+| **log-sequence-anomaly** | Goal: detects anomalous system log sequences with an LSTM next-event model, benchmarked against Isolation Forest on public LogHub data. | Python, PyTorch, scikit-learn, Drain3, LogHub | <img src="https://img.shields.io/badge/status-roadmap-22C55E?style=flat-square&labelColor=052E16" alt="Status: roadmap" /> |
+| **inject-guard** | Goal: fine-tunes a DistilBERT classifier to flag prompt injection, then evaluates it on held-out attack families and benign look-alike prompts. Tests only models I run or am permitted to assess. | Python, Hugging Face Transformers, Datasets, PyTorch | <img src="https://img.shields.io/badge/status-roadmap-22C55E?style=flat-square&labelColor=052E16" alt="Status: roadmap" /> |
+
+<br>
+
+<img src="assets/h-skills.svg" width="100%" alt="04 // Skills" />
+
+| Area | What I work with |
+| :-- | :-- |
+| **Offensive Security** | Web and API testing with Burp Suite (OWASP Top 10, auth flaws, IDOR) · recon with Nmap and ffuf · Active Directory basics in labs (Kerberoasting, BloodHound, Impacket) · reversing with Ghidra · CTFs |
+| **Defensive / Blue Team** | Traffic analysis with Wireshark · Sysmon and Windows event logs · writing Sigma and YARA rules · alert triage · mapping detections to MITRE ATT&CK |
+| **Machine Learning** | PyTorch · scikit-learn · TensorFlow/Keras basics · feature engineering · model evaluation (cross-validation, PR curves, calibration, avoiding data leakage) |
+| **AI Security** | Prompt injection testing · jailbreak evaluation · OWASP Top 10 for LLM Applications · RAG and agent tool-abuse scenarios · transformers fine-tuning for guardrail classifiers · adversarial example basics (FGSM, PGD) |
+| **Languages / Tooling** | Python · Bash · C · C++ · Linux · Kali · Docker · Git · Neovim · Jupyter |
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=kali,linux,bash,python,c,cpp,docker,git,neovim,astro&theme=dark&perline=10" alt="Kali, Linux, Bash, Python, C, C++, Docker, Git, Neovim, Astro" />
+<img src="https://skillicons.dev/icons?i=kali,linux,py,bash,c,cpp,pytorch,tensorflow,sklearn,docker,git,neovim,astro&theme=dark&perline=13" alt="Kali, Linux, Python, Bash, C, C++, PyTorch, TensorFlow, scikit-learn, Docker, Git, Neovim, Astro" />
 
 </div>
 

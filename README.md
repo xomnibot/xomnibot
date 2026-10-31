@@ -52,6 +52,8 @@ building-offensive-tooling/    reversing-malware/    training-models/    ctf/   
 
 <div align="center">
 
+<img src="assets/cat.gif" width="300" alt="Pixel-art cat in front of a monitor, typing furiously on a laptop" />
+
 <img src="assets/terminal.svg" width="100%" alt="Animated terminal running lab recon, model training and reversing commands" />
 
 </div>
@@ -105,6 +107,16 @@ building-offensive-tooling/    reversing-malware/    training-models/    ctf/   
 
 <br>
 
+<div align="center">
+
+<img src="assets/globe.gif" width="32%" alt="Rotating wireframe globe with network links" />
+<img src="assets/radar.gif" width="32%" alt="Radar sweep picking up blips" />
+<img src="assets/descent.gif" width="32%" alt="Gradient descent rolling down a rotating loss surface" />
+
+</div>
+
+<br>
+
 <img src="assets/h-activity.svg" width="100%" alt="05 // Activity" />
 
 <div align="center">
@@ -124,6 +136,8 @@ building-offensive-tooling/    reversing-malware/    training-models/    ctf/   
 
 <img src="https://komarev.com/ghpvc/?username=xomnibot&label=profile+views&color=22C55E&style=flat-square" alt="Profile views" />
 <img src="https://img.shields.io/github/followers/xomnibot?label=followers&color=22C55E&labelColor=052E16&style=flat-square" alt="Followers" />
+
+<img src="assets/glitch.gif" width="100%" alt="xomnibot in glitching terminal text" />
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:4ADE80,50:16A34A,100:022C22&height=120&section=footer" width="100%" alt="" />
 
